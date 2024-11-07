@@ -9,11 +9,13 @@
 </head>
 <!-- #3abab4 -->
 
-<body class="bg-[#1d1d20]">
+<body class="bg-dark">
+
+    <!-- Header -->
     <header class="w-[1100px] mx-auto py-6">
         <div class="flex justify-between items-center">
             <div class="left-part flex items-center justify-between w-2/5 gap-8">
-                <div class="logo w-10 h-10 rounded-full bg-[#1d1d20] border-[10px] border-[#3abab4]"></div>
+                <div class="logo w-10 h-10 rounded-full bg-dark border-[10px] border-green"></div>
                 <div class="nav-bar text-gray-300 text-lg flex-grow">
                     <ul class="flex justify-between">
                         <li class="hover:text-white cursor-pointer transition">About</li>
@@ -25,12 +27,30 @@
             </div>
             <div class="right-part flex items-center gap-8">
                 <div
-                    class="checkbox w-12 h-6 rounded-full bg-[#3abab4] relative before:w-5 before:h-5 before:bg-[#1d1d20] before:rounded-full before:content-normal before:absolute before:right-0 before:top-1/2 before:-translate-y-1/2 before:mr-[2px] before:transition before:duration-300 hover:before:left-0 hover:before:ml-[2px] cursor-pointer">
+                    class="checkbox w-12 h-6 rounded-full bg-green relative before:w-5 before:h-5 before:bg-dark before:rounded-full before:content-normal before:absolute before:right-0 before:top-1/2 before:-translate-y-1/2 before:mr-[2px] before:transition before:duration-300 hover:before:left-0 hover:before:ml-[2px] cursor-pointer">
                 </div>
-                <div class="button bg-[#3abab4] text-white text-lg py-2 px-6 font-semibold rounded">Request code</div>
+                <div class="button bg-green text-white text-lg py-2 px-6 font-semibold rounded">Request code</div>
             </div>
         </div>
     </header>
+
+    <!-- Hero section -->
+    <div class="hero-section mt-20 flex w-[1100px] mx-auto items-center justify-between">
+        <div class="left-part text-white w-[55%] flex flex-col gap-5">
+            <div class="hero-title text-8xl font-bold">Your website, reimagined</div>
+            <div class="hero-des text-gray-400 text-xl">Our landing page template works on all devices, so you only have
+                to set
+                it up once, and get beautiful results forever.</div>
+        </div>
+        <div class="right-part">
+            <div class="mockup-img relative">
+                <img src="https://preview.cruip.com/appy/images/mockup-image-01.jpg"
+                    class="h-[45rem] w-auto scale-[.95] rounded-2xl">
+                <img src="https://preview.cruip.com/appy/images/iphone-mockup.png"
+                    class="h-[45rem] w-auto absolute top-0">
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
