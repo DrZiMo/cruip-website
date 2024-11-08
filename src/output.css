@@ -789,11 +789,6 @@ video {
   background-color: rgb(58 186 180 / var(--tw-bg-opacity));
 }
 
-.bg-light_dark {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 34 37 / var(--tw-bg-opacity));
-}
-
 .bg-slight_black {
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -804,6 +799,30 @@ video {
 
 .bg-slight_white {
   background-color: rgba(255, 255, 255, 0.07);
+}
+
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.from-light_dark {
+  --tw-gradient-from: #222225 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(34 34 37 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-red-700 {
+  --tw-gradient-from: #b91c1c var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(185 28 28 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-dark {
+  --tw-gradient-to: #1d1d20 var(--tw-gradient-to-position);
+}
+
+.to-blue-500 {
+  --tw-gradient-to: #3b82f6 var(--tw-gradient-to-position);
 }
 
 .fill-current {
@@ -1012,6 +1031,15 @@ video {
 .before\:duration-300::before {
   content: var(--tw-content);
   transition-duration: 300ms;
+}
+
+.hover\:bg-slight_green:hover {
+  background-color: rgba(79, 209, 197, 0.3);
+}
+
+.hover\:text-green:hover {
+  --tw-text-opacity: 1;
+  color: rgb(58 186 180 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover {
